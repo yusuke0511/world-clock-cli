@@ -18,13 +18,27 @@ A beautiful real-time world clock CLI tool that displays times across major citi
 
 ## Installation
 
+### Homebrew (Recommended)
+
+```bash
+brew tap yusuke0511/tap
+brew install wclock
+```
+
+### GitHub Releases
+
+Download pre-built binaries for your platform from [Releases](https://github.com/yusuke0511/world-clock-cli/releases/latest):
+- Linux (x86_64)
+- macOS (Intel & Apple Silicon)
+- Windows (x86_64)
+
 ### From Source
 
 1. Install Rust toolchain from [rustup.rs](https://rustup.rs/)
 
 2. Clone and install:
 ```bash
-git clone https://github.com/yourusername/world-clock-cli.git
+git clone https://github.com/yusuke0511/world-clock-cli.git
 cd world-clock-cli
 cargo install --path .
 ```
