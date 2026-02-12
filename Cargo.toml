@@ -1,0 +1,25 @@
+[package]
+name = "world-clock-cli"
+version = "0.1.0"
+edition = "2021"
+authors = ["wclock contributors"]
+description = "A beautiful real-time world clock CLI displaying times across major cities"
+license = "MIT"
+repository = "https://github.com/yourusername/world-clock-cli"
+homepage = "https://github.com/yourusername/world-clock-cli"
+documentation = "https://github.com/yourusername/world-clock-cli#readme"
+readme = "README.md"
+keywords = ["cli", "clock", "timezone", "time", "world-clock"]
+categories = ["command-line-utilities"]
+
+[[bin]]
+name = "wclock"
+path = "src/main.rs"
+
+[dependencies]
+chrono = "0.4"
+chrono-tz = "0.8"
+crossterm = "0.27"
+serde = { version = "1.0", features = ["derive"] }
+toml = "0.8"
+dirs = "5.0"

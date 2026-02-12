@@ -1,0 +1,34 @@
+# wclock configuration file
+# 世界の主要都市のタイムゾーン設定
+
+timezones = [
+    # アジア
+    "Asia/Tokyo",
+    "Asia/Seoul",
+    "Asia/Shanghai",
+    "Asia/Hong_Kong",
+    "Asia/Singapore",
+    "Asia/Dubai",
+    
+    # ヨーロッパ
+    "Europe/London",
+    "Europe/Paris",
+    "Europe/Berlin",
+    "Europe/Moscow",
+    
+    # 北米・南米
+    "America/New_York",
+    "America/Los_Angeles",
+    "America/Chicago",
+    "America/Toronto",
+    "America/Sao_Paulo",
+    "America/Mexico_City",
+    
+    # オセアニア
+    "Australia/Sydney",
+    "Pacific/Auckland",
+    
+    # アフリカ
+    "Africa/Cairo",
+    "Africa/Johannesburg",
+]
