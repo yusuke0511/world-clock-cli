@@ -46,16 +46,3 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: target/${{ matrix.target }}/release/${{ matrix.artifact_name }}
-
-  publish-crates:
-    name: Publish to crates.io
-    needs: build-release
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      
-      - name: Install Rust
-        uses: dtolnay/rust-toolchain@stable
-      
-      - name: Publish to crates.io
-        run: cargo publish --token ${{ secrets.CARGO_TOKEN }}
