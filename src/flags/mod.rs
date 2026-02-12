@@ -6,14 +6,14 @@ mod america;
 mod asia;
 mod australia;
 mod europe;
-mod pacific;
 mod other;
+mod pacific;
 
 /// Get the country flag emoji for a given city name
-/// 
+///
 /// # Arguments
 /// * `city_name` - The city name as it appears in the timezone identifier (e.g., "New York", "Tokyo")
-/// 
+///
 /// # Returns
 /// The country flag emoji for the city, or 🌐 if not found
 pub fn get_country_flag(city_name: &str) -> &'static str {
@@ -39,7 +39,7 @@ pub fn get_country_flag(city_name: &str) -> &'static str {
     if let Some(flag) = other::get_flag(city_name) {
         return flag;
     }
-    
+
     // Default: globe emoji
     "🌐"
 }

@@ -171,7 +171,7 @@ pub fn run_clock(stdout: &mut impl Write, cities: &[City]) -> io::Result<()> {
             }
             writeln!(stdout, "\r")?;
 
-            // bottom line 
+            // bottom line
             write!(stdout, "  └────────────────────┘")?;
             if city2.is_some() {
                 write!(stdout, "  └────────────────────┘")?;

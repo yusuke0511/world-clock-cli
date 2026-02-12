@@ -3,7 +3,10 @@ mod display;
 mod flags;
 mod timezone;
 
-use crossterm::{cursor, execute, terminal::{EnterAlternateScreen, LeaveAlternateScreen}};
+use crossterm::{
+    cursor, execute,
+    terminal::{EnterAlternateScreen, LeaveAlternateScreen},
+};
 use std::env;
 use std::io::{self, stdout};
 
